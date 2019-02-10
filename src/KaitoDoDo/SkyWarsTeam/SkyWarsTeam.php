@@ -33,7 +33,7 @@ use KaitoDoDo\SkyWarsTeam\RefreshArena;
 
 class SkyWarsTeam extends PluginBase implements Listener {
 
-        public $prefix = TextFormat::GRAY . "[" . TextFormat::AQUA . TextFormat::BOLD . "Sky" . TextFormat::GREEN . "Wars§6Team" . TextFormat::RESET . TextFormat::GRAY . "]";
+        public $prefix = TextFormat::GRAY . "[" . TextFormat::GOLD . TextFormat::BOLD . "SW" . TextFormat::GREEN . "Team" . TextFormat::RESET . TextFormat::GRAY . "]";
 	public $mode = 0;
 	public $arenas = array();
 	public $currentLevel = "";
@@ -43,7 +43,7 @@ class SkyWarsTeam extends PluginBase implements Listener {
 	
 	public function onEnable()
 	{
-		  $this->getLogger()->info(TextFormat::AQUA . "Sky§aWars§6Team §bby KaitoDoDo");
+		  $this->getLogger()->info(TextFormat::AQUA . "Sky§aWars§6Team §bby BHNetwork");
 
                 $this->getServer()->getPluginManager()->registerEvents($this ,$this);
                 $this->economy = $this->getServer()->getPluginManager()->getPlugin("EconomyAPI");
@@ -805,7 +805,7 @@ class GameSender extends PluginTask {
 										$pl->sendMessage("§e>--------------------------------");
                                                                                 $pl->sendMessage("§e>§c¡Attention: §6The game is starting!");
                                                                                 $pl->sendMessage("§e>§fUsing the map: §a" . $arena);
-                                                                                $pl->sendMessage("§e>§bYou have §a15 §bseconds of Invencibility");
+                                                                                $pl->sendMessage("§e>§bYou have §a15 §bseconds of Invincibility");
                                                                                 $pl->sendMessage("§e>--------------------------------");
 									}
 								}
@@ -814,7 +814,7 @@ class GameSender extends PluginTask {
 									foreach($playersArena as $pl)
 									{
 										$pl->sendMessage("§e>§e--------------------------------");
-                                                                                $pl->sendMessage("§e>§bYou have §a15 §bseconds of Invencibility");
+                                                                                $pl->sendMessage("§e>§bYou have §a15 §bseconds of Invincibility");
                                                                                 $pl->sendMessage("§e>§e--------------------------------");
 									}
 								}
@@ -823,7 +823,7 @@ class GameSender extends PluginTask {
 									foreach($playersArena as $pl)
 									{
 										$pl->sendMessage("§e>§e-------------------");
-                                                                                $pl->sendMessage("§e>§bYou are not Invincible");
+                                                                                $pl->sendMessage("§e>§bYou are not Invincible anymore");
                                                                                 $pl->sendMessage("§e>§e-------------------");
 									}
 								}
@@ -832,7 +832,7 @@ class GameSender extends PluginTask {
 									foreach($playersArena as $pl)
 									{
 										$pl->sendMessage("§e>§e--------------------------");
-                                                                                $pl->sendMessage("§e>§bPlugin remake by KaitoDoDoYT and fix by DeadOnBushPH");
+                                                                                $pl->sendMessage("§e>§bPlugin by BHNetwork");
                                                                                 $pl->sendMessage("§e>§e--------------------------");
 									}
 								}
